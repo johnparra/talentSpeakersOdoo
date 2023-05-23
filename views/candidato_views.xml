@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+
+    <record id="view_uniacme_candidato_form" model="ir.ui.view">
+    <field name="name">uniacme.candidato.form</field>
+    <field name="model">uniacme.candidato</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+
+    <form string="Partner" version="14.0">
+            <sheet>
+                <notebook position="inside">
+                    <page string="Candidato" attrs="{'invisible': [('es_candidato', '=', False)]}">
+                        <group>
+                            <field name="es_candidato"/>
+                            <field name="name"/>
+                            <field name="identificacion"/>
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+    </data>
+</odoo>

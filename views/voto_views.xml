@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <!-- Vista del modelo Voto -->
+        <record id="view_voto_form" model="ir.ui.view">
+            <field name="name">uniacme.voto.form</field>
+            <field name="model">uniacme.voto</field>
+            <field name="arch" type="xml">
+                <form string="Voto">
+                    <sheet>
+                        <group>
+                            <field name="candidato_id"/>
+                            <field name="votacion_id"/>
+                            <field name="foto_candidato"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+
+    <record id="view_res_partner_form_inherit" model="ir.ui.view">
+    <field name="name">res.partner.form.inherit</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+        <form string="Partner" version="14.0">
+            <sheet>
+                <notebook position="inside">
+                    <page string="Estudiante" attrs="{'invisible': [('es_estudiante', '=', False)]}">
+                        <group>
+                            <field name="es_estudiante"/>
+                            <field name="identificacion"/>
+                            <field name="carrera"/>
+                            <field name="sede_id"/>
+                        </group>
+                    </page>
+                </notebook>
+            </sheet>
+        </form>
+    </field>
+    </record>
+
+    </data>
+</odoo>

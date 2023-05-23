@@ -1,0 +1,55 @@
+<odoo>
+    <data>
+        <!-- Grupos de seguridad -->
+        <record id="group_uniacme_manager" model="res.groups">
+            <field name="name">Manager UniAcme</field>
+        </record>
+
+        <!-- Permisos de acceso -->
+        <record id="access_uniacme_sede_manager" model="ir.model.access">
+            <field name="name">Sede Manager</field>
+            <field name="model_id" ref="model_uniacme_sede"/>
+            <field name="group_id" ref="group_uniacme_manager"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+        <record id="access_uniacme_estudiante_manager" model="ir.model.access">
+            <field name="name">Estudiante Manager</field>
+            <field name="model_id" ref="model_uniacme_estudiante"/>
+            <field name="group_id" ref="group_uniacme_manager"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+        <record id="access_uniacme_candidato_manager" model="ir.model.access">
+            <field name="name">Candidato Manager</field>
+            <field name="model_id" ref="model_uniacme_candidato"/>
+            <field name="group_id" ref="group_uniacme_manager"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+        <record id="access_uniacme_votacion_manager" model="ir.model.access">
+            <field name="name">Votación Manager</field>
+            <field name="model_id" ref="model_uniacme_votacion"/>
+            <field name="group_id" ref="group_uniacme_manager"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+        <record id="access_uniacme_voto_manager" model="ir.model.access">
+            <field name="name">Voto Manager</field>
+            <field name="model_id" ref="model_uniacme_voto"/>
+            <field name="group_id" ref="group_uniacme_manager"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+    </data>
+</odoo>

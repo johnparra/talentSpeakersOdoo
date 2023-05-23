@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <!-- Vista del modelo Sede -->
+        <record id="view_sede_form" model="ir.ui.view">
+            <field name="name">uniacme.sede.form</field>
+            <field name="model">uniacme.sede</field>
+            <field name="arch" type="xml">
+                <form string="Sede">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

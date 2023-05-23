@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_uniacme_sede_manager,Sede Manager,model_uniacme_sede,group_uniacme_manager,1,1,1,1
+access_uniacme_estudiante_manager,Estudiante Manager,model_uniacme_estudiante,group_uniacme_manager,1,1,1,1
+access_uniacme_candidato_manager,Candidato Manager,model_uniacme_candidato,group_uniacme_manager,1,1,1,1
+access_uniacme_votacion_manager,Votación Manager,model_uniacme_votacion,group_uniacme_manager,1,1,1,1
+access_uniacme_voto_manager,Voto Manager,model_uniacme_voto,group_uniacme_manager,1,1,1,1

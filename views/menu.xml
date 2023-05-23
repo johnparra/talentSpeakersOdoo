@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+
+        <!-- Menús -->
+        <menuitem id="menu_uniacme_root" name="UniAcme" sequence="10"/>
+        <menuitem id="menu_uniacme_sedes" name="Sedes" parent="menu_uniacme_root" action="action_sede"/>
+        <menuitem id="menu_uniacme_estudiantes" name="Estudiantes" parent="menu_uniacme_root" action="action_estudiante"/>
+        <menuitem id="menu_uniacme_candidatos" name="Candidatos" parent="menu_uniacme_root" action="action_candidato"/>
+        <menuitem id="menu_uniacme_votaciones" name="Votaciones" parent="menu_uniacme_root" action="action_votacion"/>
+    </data>
+</odoo>
